@@ -15,7 +15,7 @@ function fetchUser(username) {
         })
         .then((response) => {
             // console.log(response.avatar_url);
-            displayData(response.avatar_url, response.login, response.followers, response.public_repos, response.url)
+            displayData(response.avatar_url, response.login, response.followers, response.public_repos, response.hmtl_url)
         })
         .catch((err) => {
             console.log(err);
