@@ -15,7 +15,11 @@ function fetchUser(username) {
         })
         .then((response) => {
             // console.log(response.avatar_url);
-            displayData(response.avatar_url, response.login, response.followers, response.public_repos, response.hmtl_url)
+            if (response.login === undefined) {
+                userInfoContainer.innerHTML = `<div class="stats">${username} does not exist!</div>`;
+            } else {
+                displayData(response.avatar_url, response.login, response.followers, response.public_repos, response.html_url);
+            }
         })
         .catch((err) => {
             console.log(err);
@@ -24,9 +28,11 @@ function fetchUser(username) {
 
 function displayData(avatar, username, followers, repoCount, url) {
     userInfoContainer.innerHTML = `
-    <h2><a href=${url}>${username}</a></h2>
-    <img src="${avatar} class="avatar" width="128px" height="128px">
-    <h4>${followers} followers<h4> <h4>${repoCount} public repos</h4>`;
+    <div class="avatar-container">
+    <img src=${avatar} class="avatar" width="128px" height="128px"></div>
+    <div class="stats">
+    <h2 class="username"><a href=${url}>${username}</a></h2>
+    <h4 class="followers">${followers} Followers<h4> <h4 class="repo-count">${repoCount} Public repos</h4></div>`;
 
 }
 

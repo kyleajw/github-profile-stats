@@ -1,3 +1,58 @@
-.avatar{
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+
+
+.avatar-container{
+    background-color: #ffffff;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    /* box-shadow:  0px 0px 1px 1px #000000;} */
+    box-shadow: #0000003e 1.95px 1.95px 2.6px;
+}
+.user-info{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: #0000000d 1.95px 1.95px 2.6px;
+
+}
+
+.stats{
+    background-color: #ffffff;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: #0000003e 1.95px 1.95px 2.6px;
+    width: 100%;
+    padding: 10px;
+}
+
+.avatar{
+    border-radius: 5px;
+    
+}
+
+.username a{
+    text-decoration: none;
+    font-size: 35px;
+    /* font-weight: 600; */
+}
+
+.followers, .repo-count{
+    font-size: 17px;
+    border-radius: 20px;
+    background-color: #efefef;
+    display: inline;
+    padding: 3px 6px;
+    
 }
