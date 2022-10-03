@@ -63,7 +63,7 @@ function fetchRepos(response) {
     // });
     for (let i = 0; i < 4; i++) {
         topRepos.push(`<div class="repo"><h2 class="repo-name"><a href="${repos[i].html_url}">${repos[i].full_name}</a></h2>
-        <h4 class="repo-stars">Stars: ${repos[i].stargazers_count}</h4></div>`);
+        <h4 class="repo-stars">Stars: ${repos[i].stargazers_count}</h4><h4 class="repo-forks">Forks: ${repos[i].forks_count}</h4></div>`);
     }
 
     let topRepoHTML = '';

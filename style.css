@@ -89,14 +89,14 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
     padding: 10px;
 }
 
-.repo-name, .repo-stars{
+.repo-name, .repo-stars, .repo-forks{
     background-color: #efefef;
     padding: 5px;
     border-radius: 10px;
     margin: 5px;
 }
 
-.repo-stars{
+.repo-stars, .repo-forks{
     justify-self: end;
 }
 
