@@ -6,7 +6,24 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 }
 
+.title{
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    
 
+}
+
+.heading{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.author{
+    font-size: 20px;
+    text-decoration: none;
+}
 
 .avatar-container{
     background-color: #ffffff;
@@ -16,10 +33,11 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
     /* box-shadow:  0px 0px 1px 1px #000000;} */
     box-shadow: #0000003e 1.95px 1.95px 2.6px;
 }
-.user-info{
+.rounded-bg{
     display: flex;
     margin: 20px;
     align-items: center;
+    justify-content: center;
     background-color: #efefef;
     border-radius: 20px;
     padding: 10px;
@@ -55,4 +73,33 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
     display: inline;
     padding: 3px 6px;
     
+}
+
+.user-info, .top-repos{
+    visibility: hidden;
+}
+
+.repo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.repo-name, .repo-stars{
+    background-color: #efefef;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.repo-stars{
+    justify-self: end;
+}
+
+.repo-name a{
+    text-decoration: none;
 }
