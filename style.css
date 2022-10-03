@@ -87,6 +87,9 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
     margin: 10px;
     border-radius: 20px;
     padding: 10px;
+    box-shadow: #0000000d 1.95px 1.95px 2.6px;
+
+    
 }
 
 .repo-name, .repo-stars, .repo-forks{
@@ -94,6 +97,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
     padding: 5px;
     border-radius: 10px;
     margin: 5px;
+    
 }
 
 .repo-stars, .repo-forks{
@@ -102,4 +106,42 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
 .repo-name a{
     text-decoration: none;
+}
+
+.theme-button{
+    border: 0;
+    border-radius: 40px;
+    margin-left: 30px;
+    font-size: 12px;
+    background-color: #242424;
+    color: #ffffff;
+    align-self: center;
+}
+
+
+.dark-theme{
+    background: #0d0d0d;
+    color: #ffffff;
+}
+
+.dark-theme .theme-button{
+    background-color: #efefef;
+    color: #000000;
+}
+
+.dark-theme .stats, .dark-theme , .dark-theme .avatar-container{
+    background-color: #1b1b1b;
+
+}
+
+.dark-theme .followers, .dark-theme .repo-count{
+    background-color:#242424;
+}
+
+.dark-theme .repo{
+    background-color: #141414;
+}
+
+.dark-theme .rounded-bg, .dark-theme .repo-name, .dark-theme .repo-forks, .dark-theme .repo-stars{
+    background-color: #242424;
 }

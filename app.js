@@ -1,5 +1,16 @@
 const userInfoContainer = document.querySelector('.user-info');
+document.querySelector('.theme-button').addEventListener('click', (e) => {
+    if (document.body.classList.contains('dark-theme')) {
+        document.body.classList.remove('dark-theme');
+        document.querySelector('.theme-button').textContent = 'Dark Mode';
 
+    } else {
+        document.body.classList.add('dark-theme');
+        document.querySelector('.theme-button').textContent = 'Light Mode';
+    }
+
+    e.preventDefault();
+});
 
 const searchBtn = document.querySelector('.search-button').addEventListener('click', e => {
     const user = document.getElementById('search').value;
