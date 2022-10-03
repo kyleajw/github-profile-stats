@@ -16,7 +16,7 @@ const searchBtn = document.querySelector('.search-button').addEventListener('cli
     const user = document.getElementById('search').value;
     document.querySelector('.user-info').style.visibility = "visible";
 
-
+    document.querySelector('.top-repos').innerHTML = '';
     console.log(user);
     fetchUser(user);
 
@@ -34,6 +34,7 @@ function fetchUser(username) {
             if (response.login === undefined) {
                 userInfoContainer.innerHTML = `<div class="stats">${username} does not exist!</div>`;
                 document.querySelector('.top-repos').style.visibility = "hidden";
+
 
             } else {
                 document.querySelector('.top-repos').style.visibility = "visible";
